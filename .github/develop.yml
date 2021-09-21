@@ -1,0 +1,12 @@
+on: [push]
+
+jobs:
+  helmsman_test_job:
+    runs-on: ubuntu-latest
+    name: A job to apply helmsman
+    steps:
+      - name: Helmsman Test Step
+        id: helmsman
+        uses: ./
+        with:
+          args: '-f hello'

@@ -1,17 +1,12 @@
 name: 'Helmsman'
 description: 'A github action running Helmsman'
 inputs:
-  chart-file:
-    description: 'The path to the DSF'
-    required: true
-    default: './charts.yaml'
-  debug:
-    description: 'Sets the debug flag'
+  args:
+    description: 'Arguments to apply to helmsman'
     required: false
     default: ''
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.chart-file }}
-    - ${{ inputs.debug }}
+    - ${{ inputs.args }}

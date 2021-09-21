@@ -4,22 +4,12 @@ This action uses the popular [helmsman](https://github.com/Praqma/helmsman) tool
 
 ## Inputs
 
-## `chart-file`
+## `args`
 
-**Required** The path to the chart file. Default `"./charts"`.
-
-## `debug`
-
-**Optional** Sets the --debug flag. Default `""`.
-
-## Outputs
-
-## `time`
-
-The time we greeted you.
+**Optional** The path to the chart file. Default `""`.
 
 ## Example usage
 
-uses: actions/hello-world-docker-action@v1
+uses: actions/helmsman-action@v1
 with:
-  who-to-greet: 'Mona the Octocat'
+  args: '-f ./build/helm/charts.yaml -apply'
