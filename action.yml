@@ -1,4 +1,4 @@
-name: 'Helmsman'
+name: 'Helmsman Deploy'
 description: 'A github action running Helmsman'
 inputs:
   args:
@@ -10,3 +10,7 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.args }}
+
+branding:
+  icon: 'anchor'
+  color: 'blue'
