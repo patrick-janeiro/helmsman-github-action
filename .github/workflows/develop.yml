@@ -10,5 +10,3 @@ jobs:
       - name: Helmsman Test Step
         id: helmsman
         uses: ./
-        with:
-          args: '-f hello'
