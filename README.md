@@ -6,7 +6,7 @@ This action uses the popular [helmsman](https://github.com/Praqma/helmsman) tool
 
 ## `args`
 
-**Optional** The path to the chart file. Default `""`.
+**Optional** The arguments passed to helmsman. Default `""`.
 
 ## Example usage
 
